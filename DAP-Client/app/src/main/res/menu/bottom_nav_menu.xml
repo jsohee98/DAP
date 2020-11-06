@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/navigation_test_list"
+        android:icon="@drawable/ic_test_black"
+        android:title="@string/title_test_list" />
+
+    <item
+        android:id="@+id/navigation_test_result"
+        android:icon="@drawable/ic_list_black"
+        android:title="@string/title_test_result" />
+
+</menu>

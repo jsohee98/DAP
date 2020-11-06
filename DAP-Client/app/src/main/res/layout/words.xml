@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="bottom"
+    android:background="#ffffff">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="20dp">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="10dp">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/me"
+                android:adjustViewBounds="true"
+                android:maxHeight="80dp"
+                android:maxWidth="80dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="10dp"
+                android:gravity="center"
+                android:text="나"
+                android:textSize="15dp"
+                android:textColor="#ffffff"
+                android:background="#87CEFA"
+                android:paddingVertical="5dp"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="10dp">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/key"
+                android:adjustViewBounds="true"
+                android:maxHeight="80dp"
+                android:maxWidth="80dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="10dp"
+                android:gravity="center"
+                android:text="열쇠"
+                android:textSize="15dp"
+                android:textColor="#ffffff"
+                android:background="#87CEFA"
+                android:paddingVertical="5dp"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="10dp">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/turtle"
+                android:adjustViewBounds="true"
+                android:maxHeight="80dp"
+                android:maxWidth="80dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="10dp"
+                android:gravity="center"
+                android:text="거북이"
+                android:textSize="15dp"
+                android:textColor="#ffffff"
+                android:background="#87CEFA"
+                android:paddingVertical="5dp"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_marginTop="18dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/bridge"
+                android:adjustViewBounds="true"
+                android:maxHeight="100dp"
+                android:maxWidth="80dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="10dp"
+                android:gravity="center"
+                android:text="다리"
+                android:textSize="15dp"
+                android:textColor="#ffffff"
+                android:background="#87CEFA"
+                android:paddingVertical="5dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="위의 그림과 같이 네가지의 단어를 넣어"
+            android:textSize="20dp"
+            android:textColor="#000000"
+            android:layout_gravity="center"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="하나의 문장을 만듭니다."
+            android:textSize="20dp"
+            android:textColor="#000000"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+    <!-- 일단 텍스트가 변환됨을 보이기 위함 추후 삭제예정 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/txt_result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btn_start"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:singleLine="false"
+            android:textColor="#000000" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:layout_marginBottom="30dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:text="생각한 문장을 아래 버튼을 눌러"
+            android:textColor="#000000"
+            android:textSize="15dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:text="녹음해주세요."
+            android:textColor="#000000"
+            android:textSize="15dp" />
+
+        <!-- 일단 API는 텍스트 사용해서 상태 바꾸는건데 이미지 사용은 좀 더 시도해봐야될거같아서 주석처리함
+            <ImageButton
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:background="@drawable/microphone"
+            android:adjustViewBounds="true"
+            android:maxHeight="40dp"
+            android:maxWidth="40dp"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"/> -->
+        <Button
+            android:id="@+id/btn_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp"
+            android:paddingLeft="32dp"
+            android:paddingRight="32dp"
+            android:layout_gravity="center"
+            android:background="@drawable/round_button"
+            android:text="@string/str_start"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

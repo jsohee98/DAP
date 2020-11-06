@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".JoinActivity"
+    android:background="#ffffff">
+
+    <TextView
+        android:id="@+id/pageName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="회원가입"
+        android:textSize="16dp"
+        android:textColor="@color/colorTitlePrimaryDark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+<!-- input section start  -->
+
+    <TextView
+        android:id="@+id/idTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="아이디 *"
+        android:textColor="@color/colorTitlePrimaryDark"
+        android:textSize="22dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintTop_toBottomOf="@+id/pageName"
+        app:layout_constraintLeft_toLeftOf="parent"
+        />
+
+    <EditText
+        android:id="@+id/inputId"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="아이디를 입력하시오."
+        android:textColor="@color/colorTitlePrimaryDark"
+        android:textColorHint="#d0d0d0"
+        android:backgroundTint="@color/colorPrimary"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="8dp"
+        android:paddingLeft="16dp"
+        android:inputType="text"
+        app:layout_constraintTop_toBottomOf="@+id/idTextView"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/idDCheckBtn"
+        />
+    <Button
+        android:id="@+id/idDCheckBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="중복 확인"
+        android:textColor="#ffffff"
+        android:background="@drawable/round_button_background"
+        android:layout_marginRight="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/idTextView"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="영문자/숫자/특수문자 중 2가지 사용하여 8자 이상"
+        android:textColor="@color/colorTitlePrimaryDark"
+        android:textSize="12dp"
+        android:layout_marginRight="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/pwdTextView"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/pwdTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="비밀번호 *"
+        android:textColor="@color/colorTitlePrimaryDark"
+        android:textSize="22dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintTop_toBottomOf="@+id/inputId"
+        app:layout_constraintLeft_toLeftOf="parent"
+        />
+
+    <EditText
+        android:id="@+id/inputPwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorTitlePrimaryDark"
+        android:hint="비밀번호를 입력하시오."
+        android:textColorHint="#d0d0d0"
+        android:backgroundTint="@color/colorPrimary"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="8dp"
+        android:paddingLeft="16dp"
+        android:inputType="textPassword"
+        app:layout_constraintTop_toBottomOf="@+id/pwdTextView"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/pwdCheckResultTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="@color/colorAccent"
+        android:textSize="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/pwdConfirmTextView"
+        app:layout_constraintLeft_toRightOf="@+id/pwdConfirmTextView"
+        />
+
+    <TextView
+        android:id="@+id/pwdConfirmTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="비밀번호 확인 *"
+        android:textColor="@color/colorTitlePrimaryDark"
+        android:textSize="22dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintTop_toBottomOf="@+id/inputPwd"
+        app:layout_constraintLeft_toLeftOf="parent"
+        />
+
+    <EditText
+        android:id="@+id/inputConfirmPwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorTitlePrimaryDark"
+        android:hint="비밀번호를 입력하시오."
+        android:textColorHint="#d0d0d0"
+        android:backgroundTint="@color/colorPrimary"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="8dp"
+        android:paddingLeft="16dp"
+        android:inputType="textPassword"
+        app:layout_constraintTop_toBottomOf="@+id/pwdConfirmTextView"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/emailTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="이메일 *"
+        android:textSize="22dp"
+        android:textColor="@color/colorTitlePrimaryDark"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputConfirmPwd"
+        />
+
+    <TextView
+        android:id="@+id/emailValidation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="32dp"
+        android:textSize="16dp"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintTop_toBottomOf="@+id/inputConfirmPwd"
+        app:layout_constraintLeft_toRightOf="@+id/emailTextView"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <EditText
+        android:id="@+id/inputEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="8dp"
+        android:paddingLeft="16dp"
+        android:textColor="@color/colorTitlePrimaryDark"
+        android:hint="Email을 입력하시오."
+        android:textColorHint="#d0d0d0"
+        android:backgroundTint="@color/colorPrimary"
+        android:inputType="textEmailAddress"
+        app:layout_constraintTop_toBottomOf="@+id/emailTextView"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+    <TextView
+        android:id="@+id/birthTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="생년월일 *"
+        android:textSize="22dp"
+        android:textColor="@color/colorTitlePrimaryDark"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputEmail"
+        />
+
+    <EditText
+        android:id="@+id/inputBirth"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:paddingLeft="16dp"
+        android:textColor="@color/colorTitlePrimaryDark"
+        android:hint="ex)19780101"
+        android:textColorHint="#d0d0d0"
+        android:backgroundTint="@color/colorPrimary"
+        android:inputType="textEmailAddress"
+        app:layout_constraintWidth_percent="0.45"
+        app:layout_constraintTop_toBottomOf="@+id/birthTextView"
+        app:layout_constraintLeft_toLeftOf="parent"
+        />
+    <TextView
+        android:id="@+id/birthBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-"
+        android:textSize="32dp"
+        android:textColor="@color/colorTitlePrimaryDark"
+        android:layout_marginLeft="16dp"
+        app:layout_constraintTop_toTopOf="@+id/inputBirth"
+        app:layout_constraintBottom_toBottomOf="@+id/inputBirth"
+        app:layout_constraintLeft_toRightOf="@+id/inputBirth"
+        />
+    <EditText
+        android:id="@+id/inputGender"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintWidth_percent="0.11"
+        android:textColor="@color/colorTitlePrimaryDark"
+        android:textColorHint="#d0d0d0"
+        android:backgroundTint="@color/colorPrimary"
+        android:inputType="textEmailAddress"
+        app:layout_constraintTop_toBottomOf="@+id/birthTextView"
+        app:layout_constraintLeft_toRightOf="@+id/birthBar"
+        app:layout_constraintRight_toLeftOf="@+id/startText"
+        />
+
+    <TextView
+        android:id="@+id/startText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="* * * * * *"
+        android:textSize="26dp"
+        android:textColor="@color/colorTitlePrimaryDark"
+        android:layout_marginRight="16dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/birthTextView"
+        app:layout_constraintBottom_toBottomOf="@+id/inputBirth"
+        />
+
+<!--  input section end  -->
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintWidth_percent="0.5"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/round_button"
+        android:onClick="btn_join"
+        android:clickable="true"
+        android:text="회원 가입"
+        android:textSize="18dp"
+        android:textColor="@color/colorPrimary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

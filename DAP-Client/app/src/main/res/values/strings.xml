@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_test_list">진단 리스트</string>
+    <string name="title_test_result">결과 리스트</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="google_map_key" />
+    <string name="action_settings">Settings</string>
+    <string name="str_start">녹음시작!</string>
+    <string name="str_stop">녹음완료</string>
+    <string name="figure_test_head">도형 그리기를 통한</string>
+    <string name="figure_test_title">나의 기질 알아보기</string>
+    <string name="word_test_head">말로 하는 음성 인식</string>
+    <string name="word_test_title">스토리 심리 테스트</string>
+    <string name="depression_test_head">직접 체크하는</string>
+    <string name="depression_test_title">나의 우울도 검사</string>
+</resources>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:name="com.google.android.gms.maps.SupportMapFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MapsActivity"
+    android:background="#ffffff">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp">
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:onClick="mCurrentLocation"
+            android:background="@drawable/bg_round"
+            android:text="현재 위치"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginLeft="10dp"/>
+
+        <ToggleButton
+            android:id="@+id/b_showCenter"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.7"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:text="ToggleButton"
+            android:textColor="@color/colorPrimary"
+            android:background="@drawable/bg_round"
+            android:textOff="상담센터 정보 on"
+            android:textOn="상담센터 정보 OFF" />
+
+        <ToggleButton
+            android:id="@+id/b_mapmode"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:background="@drawable/bg_round"
+            android:text="ToggleButton"
+            android:textColor="@color/colorPrimary"
+            android:textOff="일반 지도"
+            android:textOn="위성 지도"
+            android:layout_marginRight="10dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <SearchView
+            android:id="@+id/sv_location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:elevation="5dp"
+            android:iconifiedByDefault="false"
+            android:queryHint="Google 지도 검색"
+            android:background="@drawable/bg_round"
+            android:textColor="@color/colorTitlePrimaryDark" />
+
+    </LinearLayout>
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>
